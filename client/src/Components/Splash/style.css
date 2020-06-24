@@ -1,0 +1,38 @@
+.splash {
+  height: 70vh;
+  background-image: url("/images/mac.jpg");
+  /* background-image: url("/images/keyboard.jpg"); */
+  filter: grayscale(90%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 480px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.781);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash-title {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 750px) {
+  
+
+}
