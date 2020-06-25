@@ -12,7 +12,7 @@ import Portfolio from './Components/Portfolio';
 function App() {
  
   const isLargeScreen = useMediaQuery({query: "(min-width: 1201px)"});
-  const isBigScreen = useMediaQuery({query: "(min-width: 900px and max-width: 1200px"})
+  const isBigScreen = useMediaQuery({query: "(min-width: 900px)"})
   const isSmallScreen = useMediaQuery({query: "(max-width: 899px)"}) 
 
   let marginLeft = 0

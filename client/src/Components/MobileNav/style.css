@@ -1,7 +1,8 @@
 #mobile-header {
+  position: fixed;
   width: 100%;
-  position: relative;
   height: 50px;
+  z-index: 100;
 }
 
 /* be mindful that there is nav styling in the other files */
@@ -87,7 +88,7 @@
 
 
 .mobile-sidenav {
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: -100px;
   width: 0px;
@@ -97,6 +98,7 @@
   transition: width .1s ease-in;
   color: white;
   font-family: 'Poppins', sans-serif;
+  z-index: 100;
 }
 
 .picture-name-container.mobile {
