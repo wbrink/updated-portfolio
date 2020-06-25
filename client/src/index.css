@@ -7,3 +7,20 @@
 html, body {
   height: 100%;
 }
+
+
+.d-flex {
+  display: flex;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
