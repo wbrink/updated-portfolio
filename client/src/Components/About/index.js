@@ -3,7 +3,7 @@ import "./style.css";
 
 function About(props) {
   return (
-    <div className="container" style={{marginLeft: `${props.margin}px`}}>
+    <div className="container" style={{marginLeft: `${props.margin}px`}} >
       <h1 className="title">About</h1>
       <p>
         Hi there! My name is will and I am currently enrolled in a coding bootcamp for web development. I am excited
