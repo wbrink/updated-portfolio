@@ -3,7 +3,7 @@ import "./style.css";
 
 function Skills(props) {
   return (
-    <div className="container" style={{marginLeft: `${props.margin}px`}}>
+    <div className="container" style={{marginLeft: `${props.margin}px`}} id="skills">
       <h1 className="title">Skills</h1>
 
       <div className="icon-container">

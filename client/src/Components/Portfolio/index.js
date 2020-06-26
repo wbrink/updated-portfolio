@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./style.css";
 
 function Portfolio({margin}) {
-  return (
-    <div className="container-2" style={{marginLeft: `${margin}px`}}>
+  return (    
+    <div className="container-2" style={{marginLeft: `${margin}px`}} id="portfolio">
       <h1 className="title">Portfolio</h1>
 
       <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-evenly"}}>

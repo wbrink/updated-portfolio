@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import "./style.css";
 
 function About(props) {
+  useEffect(() => {
+    console.log(props)
+  }, [])
+
   return (
-    <div className="container" style={{marginLeft: `${props.margin}px`}} >
+    <div className="container" style={{marginLeft: `${props.margin}px`}} id="about" >
       <h1 className="title">About</h1>
       <p>
         Hi there! My name is will and I am currently enrolled in a coding bootcamp for web development. I am excited

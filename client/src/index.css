@@ -24,3 +24,8 @@ html, body {
 .mt-10 {
   margin-top: 10px;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
