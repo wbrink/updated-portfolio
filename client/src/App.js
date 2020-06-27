@@ -48,7 +48,6 @@ function App() {
           <Portfolio margin={marginLeft} />
         </Route>
       </Router>
-      
     </div>
   );
 }
