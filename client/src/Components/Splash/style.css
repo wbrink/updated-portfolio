@@ -1,8 +1,6 @@
 .splash {
   height: 70vh;
   background-image: url("/images/mac.jpg");
-  /* background-image: url("/images/keyboard.jpg"); */
-  filter: grayscale(90%);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -15,24 +13,93 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+
+/*  */
 #splash-title {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+
+#splash-subtitle {
   color: white;
   font-size: 3rem;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+/* holds the viewportfolio and view resume */
+.splash-links-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 
-@media only screen and (max-width: 750px) {
-  
+.splash-link {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  padding: 10px;
+  min-width: 150px;
+  background-color: rgb(130, 140, 143);
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: background-color .2s ease-in, color .5s ease-in;
+}
+
+.splash-link:hover {
+  background-color: #3485f0e1;
+  color: white;
+}
+
+.splash-link:active {
+  background-color: #3485f0e1;
+  color: white;
+}
+
+.splash-link:first-child {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 899px) {
+  /* dont show name on mobile */
+  #splash-title {
+    display: none;
+  }
+
+  #splash-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  .splash-links-container {
+    flex-direction: column;
+  }
+
+  .splash-link:first-child {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
 
 }
