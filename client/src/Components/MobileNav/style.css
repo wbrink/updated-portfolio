@@ -54,25 +54,29 @@
   background-color: white;
 }
 
+/* top bar */
 .hamburger-menu::before {
   transform: translateY(-10px);
   transition: all .1s ease-in;
-  background-color: rgb(0, 132, 255);
+  background-color: white;
 }
 
+/* bottom bar */
 .hamburger-menu::after {
   transform: translateY(10px);
   transition: all .2s ease-in-out;
-  background-color: rgb(238, 73, 73);
+  background-color: white;
 }
 
 /* animate the middle line */
 .hamburger.open .hamburger-menu {
   transform: rotate(45deg);
   transition-delay: .2s;
+  background-color: rgb(207, 49, 49);
 }
 
 /* animate the top line */
+/* top line fades to bottom */
 .hamburger.open .hamburger-menu::before {
   transform: translateY(30px);
   background: transparent;
@@ -83,6 +87,7 @@
 .hamburger.open .hamburger-menu::after {
   transition-delay: .2s;
   transform: rotate(-90deg);
+  background-color: rgb(207, 49, 49);
 }
 
 
@@ -90,11 +95,11 @@
 .mobile-sidenav {
   position: fixed;
   top: 50px;
-  left: -100px;
+  left: -300px;
   width: 0px;
   bottom: 0px;
   height: calc(100% - 50px);
-  background-color: #06101f;
+  background-color: #121618;
   transition: width .1s ease-in;
   color: white;
   font-family: 'Poppins', sans-serif;
