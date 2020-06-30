@@ -86,10 +86,10 @@ function MobileNav(props) {
             <div>Contact</div>
           </Link>
 
-          {/* <div className="nav-icon-links">
+          <div className="nav-icon-links">
             <i class="devicon-github-plain icon"></i>
             <i class="devicon-linkedin-plain icon"></i>
-          </div> */}
+          </div>
       </div>
     </div> 
 

@@ -15,6 +15,10 @@ function Splash(props) {
             <a className="splash-link" href="">View Resume</a>
           </div>
           
+          <div className="social-icons">
+            <i class="devicon-github-plain icon"></i>
+            <i class="devicon-linkedin-plain icon"></i>
+          </div>
 
         </div>
 
