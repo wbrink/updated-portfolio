@@ -95,12 +95,13 @@
 .mobile-sidenav {
   position: fixed;
   top: 50px;
-  left: -300px;
+  left: 0px;
+  overflow: hidden;
   width: 0px;
   bottom: 0px;
   height: calc(100% - 50px);
   background-color: #121618;
-  transition: width .1s ease-in;
+  transition: width .1s ease-in-out;
   color: white;
   font-family: 'Poppins', sans-serif;
   z-index: 100;
@@ -115,6 +116,22 @@
 }
 
 .mobile-sidenav-container.open .mobile-sidenav {
-  left: 0px;
   width: 250px;
 }
+
+
+
+/* overlay when clicked on will close the sidenav */
+.sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(46, 86, 138, 0.301);
+  /* z=index lower than the actual sidenav and header */
+  z-index: 20;
+}
+
+
+
