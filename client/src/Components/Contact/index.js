@@ -16,18 +16,25 @@ function Contact(props) {
     // if email or message is not filled out don't let the message submit
     if (!email || !message) {
       console.log("message and email must be filled out");
+      return;
     }
+
+    const data = {
+      email: email,
+      message: message
+    }
+
     // make fetch call to api to send email message
-    // fetch("/api/contact", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify()
-    // })
-    console.log("form submitted");
-    console.log("Message:", message);
-    console.log("Email:", email);
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    }).then(res => res.json())
+      .then(data => {
+        console.log(data);
+      })
   }
 
   return (
@@ -37,7 +44,7 @@ function Contact(props) {
       <form action="" onSubmit={(e) => {handleSubmit(e)}}>
         {/* email */}
         <label htmlFor="email">Email</label>
-        <input type="email" name="email" />
+        <input type="email" name="email" onChange={e => {setEmail(e.target.value)}}/>
 
         {/* message */}
         <label htmlFor="message">Message</label>
