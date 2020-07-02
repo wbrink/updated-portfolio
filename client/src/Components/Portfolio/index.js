@@ -4,7 +4,7 @@ import "./style.css";
 function Portfolio({margin}) {
   return (    
     <div className="container-2" style={{marginLeft: `${margin}px`}} id="portfolio">
-      <h1 className="title">Portfolio</h1>
+      <h1 className="title" style={{marginBottom: "70px"}}>Portfolio</h1>
 
       <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-evenly"}}>
         

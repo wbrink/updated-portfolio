@@ -63,6 +63,7 @@
   width: 100%;
   background-color: #303133;
   transition: background-color .2s ease;
+  overflow: hidden;
 }
 
 .project-image img {
@@ -71,15 +72,13 @@
   max-width: 100%;
   max-height: 100%;
   cursor: pointer;
+  transition: all .3s ease-out;
   
 }
 
-.project-image:hover {
-  background-color: #307BF7;
-}
 
 .project-image:hover img {
-  filter: brightness(1.1);
+  transform: scale(1.1);
 }
 
 
@@ -125,7 +124,8 @@
 
 .container-2 {
   padding: 60px 30px 150px 30px;
-  background-color: rgb(214, 214, 214);
+  /* background-color: rgb(214, 214, 214); */
+  background-color: white;
   border-bottom: 1px black;
   margin-bottom: 25px;
 }

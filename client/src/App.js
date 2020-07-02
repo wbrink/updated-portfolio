@@ -8,6 +8,7 @@ import Splash from "./Components/Splash";
 import About from "./Components/About"
 import Skills from "./Components/Skills"
 import Portfolio from './Components/Portfolio';
+import Contact from './Components/Contact';
 
 import {
   BrowserRouter as Router,
@@ -46,6 +47,7 @@ function App() {
           <About margin={marginLeft} />
           <Skills margin={marginLeft} />
           <Portfolio margin={marginLeft} />
+          <Contact margin={marginLeft} />
         </Route>
       </Router>
     </div>

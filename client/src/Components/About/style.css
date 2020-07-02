@@ -11,7 +11,8 @@
 
 .container {
   padding: 60px 150px 150px 150px;
-  background-color: rgb(214, 214, 214);
+  /* background-color: rgb(214, 214, 214); */
+  background-color: white;
   border-bottom: 1px black;
   margin-bottom: 25px;
 }
