@@ -8,6 +8,7 @@ function Feedback(props) {
   })
   return (
     <div id="feedback" style={{color: props.color, opacity: props.opacity}}>{props.message}</div>
+    
   )
 }
 

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 
 import "./style.css";
 import Feedback from "../Feedback";
+import Load from "../Load"
 
 
 function Contact(props) {
@@ -14,12 +15,12 @@ function Contact(props) {
   })
 
   const [opacity, setOpacity] = useState(0);
+  const [loading, setLoading] = useState(false); // if true the loading bubble pops up
 
 
   // submit the form
   const handleSubmit = (e) => {
     e.preventDefault();
-
     // if email or message is not filled out don't let the message submit
     if (!email || !message) {
       console.log("message and email must be filled out");
@@ -28,7 +29,10 @@ function Contact(props) {
         color: "red",
       })
       setOpacity(1);
+      return;
     }
+
+    setLoading(true); // create the loading icon for the form
 
     const data = {
       email: email,
@@ -51,6 +55,7 @@ function Contact(props) {
           })
           setOpacity(1);
         } else {
+          // then the email sent
           setEmail("");
           setMessage("");
           console.log("message sent successfully");
@@ -68,9 +73,10 @@ function Contact(props) {
 
   // when feedback state is changed then add timeout that fades out feedback component
   useEffect(() => {
+    setLoading(false);
     setTimeout(() => {
-      setOpacity(0)
-    }, 5000)
+      setOpacity(0);
+    }, 4000)
   }, [feedbackProps])
 
  
@@ -87,7 +93,10 @@ function Contact(props) {
         {/* message */}
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" rows="15" onChange={e => {setMessage(e.target.value)}} value={message}/>
-        <Feedback {...feedbackProps} opacity={opacity}/>
+
+        {/* if the loading animation is on and opacity is 0 (meaning no message is created yet) */}
+        {loading == true ? <Load /> : <Feedback {...feedbackProps} opacity={opacity} />}
+        {/* <Feedback {...feedbackProps} opacity={opacity} /> */}
         <button id="submit-message-button" type="submit">Submit</button>
       </form>
     </div>

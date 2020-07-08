@@ -26,6 +26,12 @@
   letter-spacing: 2px;
 }
 
+.smaller-container {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 800px) {
   .container {
@@ -40,4 +46,10 @@
     padding: 60px 40px 70px 40px;
   }
 
+  .smaller-container {
+    width: calc(100% - 10px);
+  }
+
 }
+
+

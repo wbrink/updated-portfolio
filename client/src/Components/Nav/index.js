@@ -55,8 +55,8 @@ function Nav(props) {
 
 
         <div className="nav-icon-links">
-          <i class="devicon-github-plain icon"></i>
-          <i class="devicon-linkedin-plain icon"></i>
+            <a href="https://github.com/wbrink" target="_blank"><i class="devicon-github-plain icon"></i></a>
+            <a href="https://www.linkedin.com/in/willbrink/" target="_blank"><i class="devicon-linkedin-plain icon"></i></a>
         </div>
         
       </nav>
