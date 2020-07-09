@@ -3,16 +3,10 @@ const app = express();
 const path = require("path");
 const nodemailer = require("nodemailer");
 
-let transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.userEmail,
-    pass: process.env.userPassword
-  }
-});
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 
+let transporter;
 
 const PORT = process.env.PORT || 3001;
 
@@ -28,7 +22,7 @@ app.post("/api/contact", (req,res) => {
   const message = req.body.message;
 
   const msg = {
-    from: process.env.userEmail,
+    from: process.env.fromEmail,
     to: process.env.toEmail,
     subject: "contact form",
     html: `<h1>${email}</h1>
@@ -53,4 +47,33 @@ app.get("*", (req, res) => {
 })
 
 
-app.listen(PORT, () => console.log("Server listening on PORT", PORT));
+app.listen(PORT, async () => {
+  console.log("Server listening on PORT", PORT);
+
+  // setup oauth2 client
+  const oauth2Client = new OAuth2(
+    process.env.clientID,
+    process.env.clientSecret,
+    "https://developers.google.com/oauthplayground"
+  );
+
+  // setup access to the access token
+  oauth2Client.setCredentials({
+    refresh_token: process.env.clientRefresh
+  });
+
+  const accessToken = await oauth2Client.getAccessToken()
+
+  // create nodemailer transport
+  transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+        type: "OAuth2",
+        user: process.env.fromEmail, 
+        clientId: process.env.clientID,
+        clientSecret: process.env.clientSecret,
+        refreshToken: process.env.clientRefresh,
+        accessToken: accessToken
+    }
+  })
+});
