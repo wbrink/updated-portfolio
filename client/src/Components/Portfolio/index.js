@@ -16,7 +16,7 @@ function Portfolio({margin}) {
           <div className="grey"></div>
           {/* project photo */}
           <div className="project-image">
-            <img src="/images/social-calendar-big.PNG" alt=""/>
+            <a href="https://socialcalendar-app.herokuapp.com/" target="_blank"><img src="/images/social-calendar-big.PNG" alt=""/></a>
           </div>
 
           {/* shows the projects text info and links */}
@@ -44,7 +44,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <img src="/images/chit-chat.jpg" alt=""/>
+          <a href="https://chit-chat-cam.herokuapp.com/" target="_blank"><img src="/images/chit-chat.jpg" alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Chit Chat</h3>
@@ -68,7 +68,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <img src="/images/nasa-app.PNG" alt=""/>
+            <a href="https://wbrink.github.io/my-nasa-app/" target="_blank"><img src="/images/nasa-app.PNG" alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Orbitals App</h3>
@@ -88,7 +88,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <img src="/images/employee-directory.PNG" alt=""/>
+            <a href="https://wbrink.github.io/employee-directory/" target="_blank"><img src="/images/employee-directory.PNG" alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Employee Directory</h3>
@@ -109,7 +109,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <img src="/images/weather-dashboard.PNG" alt=""/>
+            <a href="https://wbrink.github.io/weather-dashboard" target="_blank"><img src="/images/weather-dashboard.PNG" alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Weather Dashboard</h3>
@@ -129,7 +129,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <img src="/images/coding-quiz.PNG" alt=""/>
+            <a href="https://wbrink.github.io/code-quiz/" target="_blank"><img src="/images/coding-quiz.PNG" alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Coding Quiz</h3>
