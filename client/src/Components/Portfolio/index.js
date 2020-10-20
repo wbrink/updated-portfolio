@@ -50,7 +50,7 @@ function Portfolio({margin}) {
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Chit Chat</h3>
             <p style={{marginBottom: "20px", textJustify: "inter-word"}}>Chat Application that allows you to video chat with another person. Uses webrtc for video and socket.io for both the text chat and video chat.</p>
             <p style={{marginBottom: "3px", width: "160px", textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>Demo Credentials: </p>
-            <div className="demo-credentials"><div>Username: </div><div>Mike</div></div>
+            <div className="demo-credentials"><div>Username: </div><div>test</div></div>
             <div className="demo-credentials" style={{marginBottom: "20px"}}><div>Password: </div><div>123456</div> </div>
 
             <div style={{marginBottom: "20px", width: "100%", textAlign: "center", color: "#EE665A"}}>Deployed on Heroku: Startup may take a while</div>
