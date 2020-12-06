@@ -1,5 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import "./style.css";
+import chitChat from "./images/chit-chat.jpg";
+import codingQuiz from "./images/coding-quiz.PNG";
+import dayPlanner from "./images/day-planner.PNG";
+import employeeDirectory from "./images/employee-directory.PNG";
+import nasaApp from "./images/nasa-app.PNG";
+import socialCalendar from "./images/social-calendar-big.PNG";
+import weatherDashboard from "./images/weather-dashboard.PNG";
 
 function Portfolio({margin}) {
   return (    
@@ -16,7 +23,7 @@ function Portfolio({margin}) {
           <div className="grey"></div>
           {/* project photo */}
           <div className="project-image">
-            <a href="https://socialcalendar-app.herokuapp.com/" target="_blank"><img src="/images/social-calendar-big.PNG" alt=""/></a>
+            <a href="https://socialcalendar-app.herokuapp.com/" target="_blank"><img src={socialCalendar} alt=""/></a>
           </div>
 
           {/* shows the projects text info and links */}
@@ -44,7 +51,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-          <a href="https://chit-chat-cam.herokuapp.com/" target="_blank"><img src="/images/chit-chat.jpg" alt=""/></a>
+          <a href="https://chit-chat-cam.herokuapp.com/" target="_blank"><img src={chitChat} alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Chit Chat</h3>
@@ -68,7 +75,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <a href="https://wbrink.github.io/my-nasa-app/" target="_blank"><img src="/images/nasa-app.PNG" alt=""/></a>
+            <a href="https://wbrink.github.io/my-nasa-app/" target="_blank"><img src={nasaApp} alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Orbitals App</h3>
@@ -88,7 +95,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <a href="https://wbrink.github.io/employee-directory/" target="_blank"><img src="/images/employee-directory.PNG" alt=""/></a>
+            <a href="https://wbrink.github.io/employee-directory/" target="_blank"><img src={employeeDirectory} alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Employee Directory</h3>
@@ -109,7 +116,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <a href="https://wbrink.github.io/weather-dashboard" target="_blank"><img src="/images/weather-dashboard.PNG" alt=""/></a>
+            <a href="https://wbrink.github.io/weather-dashboard" target="_blank"><img src={weatherDashboard} alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Weather Dashboard</h3>
@@ -129,7 +136,7 @@ function Portfolio({margin}) {
           <div className="yellow"></div>
           <div className="grey"></div>
           <div className="project-image">
-            <a href="https://wbrink.github.io/code-quiz/" target="_blank"><img src="/images/coding-quiz.PNG" alt=""/></a>
+            <a href="https://wbrink.github.io/code-quiz/" target="_blank"><img src={codingQuiz} alt=""/></a>
           </div>
           <div className="project-info">
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Coding Quiz</h3>

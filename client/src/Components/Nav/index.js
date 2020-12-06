@@ -2,13 +2,16 @@ import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import "./style.css";
 
+import monterey from "./monterey.jpg";
+import myPicture from "./me_circle_smaller.png";
+
 function Nav(props) {
   return (
     <header>
       <nav>
         <div className="picture-name-container">
           <div className="picture-name-container-inside">
-            <img id="nav-photo" src="/images/me_circle_smaller.png" alt=""/>
+            <img id="nav-photo" src={myPicture} alt=""/>
             <div id="nav-name">Will Brink</div>
           </div>
           

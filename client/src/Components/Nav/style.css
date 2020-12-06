@@ -45,7 +45,7 @@ li {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-image: url("/images/monterey.jpg");
+  background-image: url("./monterey.jpg");
   background-position: center;
   background-size: cover;
   filter: blur(1.5px) grayscale(100%)
