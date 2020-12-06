@@ -23,7 +23,7 @@ function Portfolio({margin}) {
           <div className="grey"></div>
           {/* project photo */}
           <div className="project-image">
-            <a href="https://socialcalendar-app.herokuapp.com/" target="_blank"><img src={socialCalendar} alt=""/></a>
+            <a href="https://social-calendar.willbrink.net" target="_blank"><img src={socialCalendar} alt=""/></a>
           </div>
 
           {/* shows the projects text info and links */}
@@ -31,10 +31,10 @@ function Portfolio({margin}) {
             <h3 style={{textAlign: "center", marginBottom: "10px", textTransform: "uppercase"}}>Social Calendar</h3>
             <p style={{marginBottom: "20px", textJustify: "inter-word"}}>Calendar app that allows you to sign in and create events and view your friends calendars. Made with ReactJS Node and MongoDB with Mongoose.</p>
             <p style={{marginBottom: "3px", width: "160px", textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>Demo Credentials: </p>
-            <div className="demo-credentials"><div>Username: </div><div>A</div></div>
-            <div className="demo-credentials" style={{marginBottom: "20px"}}><div>Password: </div><div>123</div> </div>
+            <div className="demo-credentials"><div>Username: </div><div>test</div></div>
+            <div className="demo-credentials" style={{marginBottom: "20px"}}><div>Password: </div><div>123456</div> </div>
 
-            <div style={{marginBottom: "20px", width: "100%", textAlign: "center", color: "#EE665A"}}>Deployed on Heroku: Startup may take a while</div>
+            {/* <div style={{marginBottom: "20px", width: "100%", textAlign: "center", color: "#EE665A"}}>Deployed on Heroku: Startup may take a while</div> */}
             
             {/* links */}
             <div className="d-flex justify-evenly">
