@@ -38,7 +38,7 @@ function Portfolio({margin}) {
             
             {/* links */}
             <div className="d-flex justify-evenly">
-              <a href="https://socialcalendar-app.herokuapp.com/" target="_blank">View Live</a>
+              <a href="https://social-calendar.willbrink.net" target="_blank">View Live</a>
               <a href="https://github.com/wbrink/social-calendar" target="_blank">View Source</a>
             </div>
             
